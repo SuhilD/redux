@@ -14,14 +14,6 @@ export const userSlice = createSlice({
       state.value = state.value.filter((user) => user.id !== action.payload.id);
     },
 
-    // updateTravel: (state, action) => {
-    //   state.value.map((user) => {
-    //     if (user.id === action.payload.id) {
-    //       user.username = action.payload.username;
-    //     }
-    //   });
-    // },
-
     updateTravel: (state, action) => {
         const index = state.value.findIndex((user) => user.id === action.payload.id);
         if (index !== -1) {
