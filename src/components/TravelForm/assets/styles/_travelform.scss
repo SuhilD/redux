@@ -1,0 +1,93 @@
+
+.travelForm-wrapper{
+    .form-input-overall{
+       &:not(:last-child){
+            margin-bottom: 30px;
+       }
+
+       .form-control{
+            border: solid 1px $color-darkgrey;
+            &:focus{
+                box-shadow: none;
+                
+            }
+       }
+    }
+
+    .section-title{
+        font-family: $font-secondary;
+        @include fontsize(30px);
+        font-weight: $font-weight-600;
+        line-height: $line-height-120;
+        padding: 40px 0;
+    }
+
+    // .listing-nav{
+    //     ul{
+    //         background-color: $color-darkgrey;
+    //         padding: 20px 20px;
+    //         margin-bottom: 0;
+            
+    //         li{
+    //             font-family: $font-secondary;
+    //             font-weight: $font-weight-600;
+    //             @include fontsize(15px);
+    //         }
+    //     }
+        
+    // }
+
+    .react-datepicker-wrapper{
+        width: 100%;
+        border: solid 1px $color-darkgrey;
+        margin-bottom: 30px;
+        border-radius: 5px;
+
+        .date-class{
+            padding: 9px 0;
+            width: 100%;
+
+            &::placeholder{
+                padding-left: 12px;
+            }
+        }
+    }
+
+    .table-section{
+        thead{
+            // background-color: $color-darkgrey;
+            tr{
+                
+                th{
+                    background-color: $color-darkgrey;
+                    padding: 18px 10px;
+                    text-align: center;
+                    @include fontsize(17px);
+                    font-family: $font-secondary;
+                    font-weight: $font-weight-600;
+                }
+            }
+        }
+
+        tbody{            
+            tr{                
+                td{                    
+                    text-align: center;
+                    width: 20%;
+                }
+
+                .trip-detail-action{
+                    a{
+                       text-decoration: none;
+                       color: $color-grey;
+                    }
+                    .slash{
+                        color: $color-grey;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
