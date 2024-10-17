@@ -1,0 +1,10 @@
+.header-section{
+    background-color: $color-primary;
+    .header-title{
+        @include fontsize(30px);
+        font-family: $font-secondary;
+        font-weight: $font-weight-400;
+        color: $color-white;
+        padding: 40px 0;
+    }
+}
